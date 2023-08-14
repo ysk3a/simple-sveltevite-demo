@@ -1,5 +1,8 @@
 <script lang="ts">
-  import Greet from './lib/Greet.svelte'
+  import Greet from "./lib/Greet.svelte";
+  import Input from "./lib/Input.svelte";
+
+  let tempMsg: string = "whats up";
 </script>
 
 <main class="container">
@@ -17,15 +20,15 @@
     </a>
   </div>
 
-  <p>
-    Click on the Tauri, Vite, and Svelte logos to learn more.
-  </p>
+  <p>Click on the Tauri, Vite, and Svelte logos to learn more.</p>
 
   <div class="row">
     <Greet />
   </div>
 
-
+  <div class="row">
+    <Input msg="{tempMsg}" />
+  </div>
 </main>
 
 <style>
